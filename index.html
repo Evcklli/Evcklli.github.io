@@ -42,6 +42,36 @@
       .pub-info { width:100%; padding:10px 20px; }
       .name { font-size:30px; }
     }
+
+    .paper-card {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: #f7f7f7;
+      border-radius: 6px;
+    }
+
+    .paper-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 6px;
+    }
+
+    @media (max-width: 700px) {
+      .pub-table, .pub-table tbody, .pub-table tr, .pub-table td {
+        display: block;
+        width: 100% !important;
+        box-sizing: border-box;
+      }
+      .pub-visual {
+        margin-bottom: 14px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -59,11 +89,7 @@
           <a href="files/cv.pdf">CV</a> &nbsp;/&nbsp;
           <!-- Replace # below with your Google Scholar profile URL -->
           <a class="placeholder-link" href="#">Google Scholar</a> &nbsp;/&nbsp;
-          <a href="https://github.com/Evcklli">GitHub</a> &nbsp;/&nbsp;
-          <!-- Replace # below with your X profile URL -->
-          <a class="placeholder-link" href="#">X</a> &nbsp;/&nbsp;
-          <!-- Replace # below with your LinkedIn profile URL -->
-          <a class="placeholder-link" href="#">LinkedIn</a>
+          <a href="https://github.com/Evcklli">GitHub</a>
         </p>
       </div>
       <div class="portrait-wrap">
@@ -101,7 +127,7 @@
       <tbody>
         <tr>
           <td class="pub-visual">
-            <div class="paper-card">Token-Budget<br>Distillation</div>
+            <div class="paper-card"><img src="images/token-budget-distillation.png" alt="Token-Budget Distillation" class="paper-image"></div>
           </td>
           <td class="pub-info">
             <a href="https://arxiv.org/abs/2608.28138"><span class="papertitle">Token-Budget Distillation: Transferring Full-Token Semantics to Compressed Video Vision-Language Models</span></a>
@@ -123,7 +149,7 @@
 
         <tr>
           <td class="pub-visual">
-            <div class="paper-card">MissingBench-<br>Verified</div>
+            <div class="paper-card"><img src="images/missingbench.png" alt="MissingBench-Verified" class="paper-image"></div>
           </td>
           <td class="pub-info">
             <a href="https://arxiv.org/abs/2607.18673"><span class="papertitle">MissingBench-Verified: Probing Vision-Language Models' Inability to Detect Missing Object Parts</span></a>
